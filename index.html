@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link href="./output.css" rel="stylesheet" />
+
+    <title>Frontend Mentor | Todo app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <script type="module" defer src="./index.js"></script>
+  </head>
+  <body class="m-0 p-0 flex">
+    <div class="h-dvh w-dvw flex-col items-center">
+      <div class="h-2/6 w-full relative z-0"><img class="size-full" src="./images/bg-desktop-dark.jpg" alt="banner" /></div>
+      <div
+        class="bg-transparent font-josefin h-4/5 w-2/6 max-xl:w-2/5 max-lg:w-3/6 max-md:w-4/6 max-sm:w-5/6 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-2/4 flex-col rounded-md overflow-hidden main"
+      >
+        <div class="bg-transparent flex h-12 rounded-md mb-5">
+          <p class="text-white text-3xl font-extrabold">T O D O</p>
+          <img class="ml-auto p-3 cursor-pointer" src="./images/icon-sun.svg" alt="" />
+        </div>
+        <!-- Search bar -->
+        <div class="bg-[#25273c] h-12 flex justify-center search-box rounded-md border-b-2 border-solid border-[#393a4c] mb-5">
+          <div class="flex p-1.5 border-solid border-[#393a4c] border-2 size-7 rounded-2xl mx-5 self-center"></div>
+          <form class="self-center mr-auto">
+            <input
+              class="flex-shrink h-1/5 self-center bg-[#25273c] border-0 text-[#d2d3db]"
+              type="text"
+              placeholder="Create a new Todo..."
+            />
+          </form>
+        </div>
+        <div class="h-4/6 mb-0 bg-transparent rounded-md overflow-">
+          <div class="to-do w-full h-5/6 bg-[#25273c] overflow-y-auto text-[#e4e5f1] z-20 rounded-md"></div>
+          <div
+            class="state bg-[#25273c] border-t-2 border-[#393a4c] h-12 flex justify-center items-center space-x-9 categories text-[#777a92] text-xs rounded-b-md"
+          >
+            <!-- Add dynamic number -->
+            <p class="items pl-8 size-2/5">items left</p>
+            <div class="flex space-x-3 w-2/5">
+              <p class="all text-[#3a7bfd]">All</p>
+              <p class="active hover:text-white">Active</p>
+              <p class="completed hover:text-white">Completed</p>
+            </div>
+
+            <p class="clear pr-8 hover:text-white">Clear Completed</p>
+          </div>
+        </div>
+      </div>
+      <div class="w-full h-4/6 bg-[#161722] z-0 flex"></div>
+    </div>
+  </body>
+</html>
